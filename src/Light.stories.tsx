@@ -5,6 +5,12 @@ import Light from "./Light";
 const meta: Meta<typeof Light> = {
   component: Light,
   title: "Light",
+  argTypes: {
+    variant: {
+      control: { type: "select" },
+      options: ["crimson", "yellow", "green"],
+    },
+  },
 };
 
 export default meta;
